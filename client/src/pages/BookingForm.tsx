@@ -290,6 +290,13 @@ export default function BookingForm() {
                 </div>
 
                 {/* Submit Button */}
+                <Button 
+                  type="submit" 
+                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 rounded-lg font-semibold"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Processing..." : "Complete Booking"}
+                </Button>
                 <Button
                   asChild
                   type="submit"
@@ -298,13 +305,6 @@ export default function BookingForm() {
                   <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
                     Complete Booking
                   </a>
-                </Button>
-                <Button 
-                  type="submit" 
-                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 rounded-lg font-semibold"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Processing..." : "Complete Booking"}
                 </Button>
               </form>
             </Form>
