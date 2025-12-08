@@ -292,10 +292,11 @@ export default function BookingForm() {
                 {/* Submit Button */}
                 <Button
                   asChild
+                  type="submit"
                   className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-2 rounded-lg font-semibold"
                 >
                   <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    SUBMIT
+                    Complete Booking
                   </a>
                 </Button>
                 <Button 
