@@ -282,7 +282,7 @@ export default function BookingForm() {
                           />
                         </FormControl>
                         <FormDescription>
-                          Automatically calculated based on ticket type and quantity
+                          Automatically calculated based on ticket type and quantity.
                         </FormDescription>
                       </FormItem>
                     )}
