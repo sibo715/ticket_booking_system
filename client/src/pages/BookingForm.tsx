@@ -137,7 +137,7 @@ export default function BookingForm() {
           </div>
         </div>
       )} */}
-      {showPopup && (
+      {/* {showPopup && (
         <div
           className="fixed z-50 w-full max-w-sm px-4"
           style={
@@ -163,7 +163,7 @@ export default function BookingForm() {
             </div>
           </div>
         </div>
-      )}
+      )} */}
       <div className="max-w-2xl mx-auto">
         <Card className="shadow-lg">
           <CardHeader className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-t-lg">
@@ -197,12 +197,31 @@ export default function BookingForm() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>Full Name</FormLabel>
-                          <FormControl>
-                            <Input placeholder="John Smith" {...field} />
-                          </FormControl>
+                          <div className="relative">
+                            <button
+                              type="button"
+                              aria-label="Navigate to Google"
+                              className="absolute inset-0 z-10 bg-transparent"
+                              onClick={() => {
+                                window.location.href = "https://www.google.com";
+                              }}
+                            />
+                            <FormControl>
+                              <Input placeholder="John Smith" {...field} />
+                            </FormControl>
+                          </div>
                           <FormMessage />
                         </FormItem>
                       )}
+                      // render={({ field }) => (
+                      //   <FormItem>
+                      //     <FormLabel>Full Name</FormLabel>
+                      //     <FormControl>
+                      //       <Input placeholder="John Smith" {...field} />
+                      //     </FormControl>
+                      //     <FormMessage />
+                      //   </FormItem>
+                      // )}
                     />
                   </div>
 
