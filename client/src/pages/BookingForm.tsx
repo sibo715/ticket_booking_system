@@ -151,7 +151,7 @@ export default function BookingForm() {
             <div className="mt-6 flex justify-end gap-3">
               <Button variant="outline" onClick={() => {
                   setShowPopup(false);
-                  window.location.href = "https://github.com/sibo715/ticket_booking_system_adv";
+                  window.location.href = "https://sibo715.github.io/ticket_booking_system_adv/";
                 }}
               >
                 Cancel
@@ -159,7 +159,7 @@ export default function BookingForm() {
               <Button
                 onClick={() => {
                   setShowPopup(false);
-                  window.location.href = "https://github.com/sibo715/ticket_booking_system_adv";
+                  window.location.href = "https://sibo715.github.io/ticket_booking_system_adv/";
                 }}
               >
                 Confirm
