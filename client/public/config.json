@@ -1,0 +1,4 @@
+{
+  "__comment__": "attack type: [fake_elem, popup, prompt, overlay]",
+  "attack_type": "fake_elem"
+}
